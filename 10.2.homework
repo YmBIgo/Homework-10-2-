@@ -1,0 +1,63 @@
+//1. 引数を二つ取り、この二つを足した値を返す関数。
+var a,b;
+var beforeA,beforeB;//
+var inputA,inputB;
+var answer1;
+//足し算の計算
+function add(a,b){
+return a+b;
+}
+//入力の設定
+function add1(beforeA,beforeB){
+var result1;
+  a = beforeA;
+  b = beforeB;
+  result1 = add(a,b);
+  return result1;
+}
+//入力
+inputA = 100;//ここを書き換える
+inputB = 200;//ここを書き換える
+answer1 = add1(inputA,inputB);
+alert(answer1);
+
+//2. 引数を二つ取り、この二つを掛けた値を返す関数。
+//かけ算の計算
+var c,d;
+var beforeC,beforeD;
+var inputC,inputD;
+var answer2;
+function multiply(c,d){
+return c*d;
+}
+//入力の設定
+function multiply1(beforeC,beforeD){
+var result2;
+  c = beforeC;
+  d = beforeD;
+  result2 = multiply(c,d);
+  return result2;
+}
+//入力
+inputC = 100;//ここを書き換える
+inputD = 200;//ここを書き換える
+answer2 = multiply(inputC,inputD);
+alert(answer2);
+
+//3. 1, 2 を呼び出して、2x + 10を計算する関数。
+var inputE;
+var result3;
+var answer3,answer4;
+//関数の設定
+function F1(inputE){
+  for(var i =0;i<3;i++){
+    result3 = inputE * 2+10;
+    inputE = result3;
+  }
+  return result3;
+}
+//足し算の結果の代入
+answer3 = F1(answer1);
+alert(answer3);
+answer4 = F1(answer2);
+alert(answer4);
