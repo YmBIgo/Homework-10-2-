@@ -41,7 +41,7 @@ var result2;
 //入力
 inputC = 100;//ここを書き換える
 inputD = 200;//ここを書き換える
-answer2 = multiply(inputC,inputD);
+answer2 = multiply1(inputC,inputD);
 alert(inputC+"と"+inputD+"を掛けた結果は"+answer2);
 
 //3. 1, 2 を呼び出して、2x + 10を計算する関数。
